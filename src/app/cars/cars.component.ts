@@ -1,9 +1,9 @@
-import {Component} from '@angular/core'
+import {Component } from '@angular/core'
 
-@Component ({
-    selector:'car-Data',
-    templateUrl:'/src/app/cars/cars.component.html',
-    styleUrls:['/src/app/cars/cars.component.css']
+@Component({
+  selector: 'app-cars',
+  templateUrl: './cars.component.html',
+  styleUrls: ['./cars.component.css']
 })
 export class CarComponent {
     name:String = "Civic";

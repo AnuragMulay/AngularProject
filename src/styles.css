@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+    color: rgb(88, 0, 0);
+    font-size: large;
+}
+ table {
+    color: rgb(0, 202, 61);
+    border-collapse: collapse;
+ }
+ td {
+    border:1px black solid
+ }
