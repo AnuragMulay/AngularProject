@@ -6,7 +6,6 @@ import {Component } from '@angular/core'
   styleUrls: ['./cars.component.css']
 })
 export class CarComponent {
-    name:String = "Civic";
-    brand:String = "Honda";
-    inventory:String = "37";
+    name:String = "Anurag";
+    money:number= 450;
 }

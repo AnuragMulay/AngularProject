@@ -6,8 +6,28 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <!-- <script src="/src/customController.js" defer></script> -->
 </head>
 <body>
-  <app-root>Loading Components...</app-root>
+
+  <div ng-app="myApp" ng-controller="customCntrl">
+    <h1 ng-click="changeColor()" id="welcome"> XYZ Bank pvt ltd <h1></h1> <br><br>
+    <app-root>Loading Components...</app-root><br>
+    <p">Select the amount to withdraw :<input ng-model="amount" id="amount"></input>
+    <p ng-init="amount='0'" id="message">Are you sure you want to withdraw {{amount | currency}}</p>
+  </div>
+  
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('customCntrl', function ($scope) {
+      $scope.changeColor = function () {
+        document.getElementById("welcome").style.color = "green";
+      }
+      document.getElementById('amount').onclick=function(){
+          document.getElementById('message').style.display='block';
+      };
+    });
+  </script>
 </body>
 </html>
