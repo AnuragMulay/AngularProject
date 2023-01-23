@@ -11,11 +11,18 @@
 </head>
 <body>
 
-  <div ng-app="myApp" ng-controller="customCntrl">
-    <h1 ng-click="changeColor()" id="welcome"> XYZ Bank pvt ltd <h1></h1> <br><br>
+  <!-- Controller -->
+  <!-- <div ng-app="myApp" ng-controller="customCntrl">
+    <h1 ng-click="changeColor()" id="welcome"> XYZ Bank pvt ltd <h1></h1> <br><br> -->
+    
+    <!-- Using the "app-root directive to render the component" -->
     <app-root>Loading Components...</app-root><br>
-    <p">Select the amount to withdraw :<input ng-model="amount" id="amount"></input>
-    <p ng-init="amount='0'" id="message">Are you sure you want to withdraw {{amount | currency}}</p>
+
+    <!-- Two way data binding -->
+    <!-- <p">Select the amount to withdraw :<input ng-model="amount" id="amount"></input> -->
+
+    <!-- Initializing variables and piping -->
+    <!-- <p ng-init="amount='0'" id="message">Are you sure you want to withdraw {{amount | currency}}</p> -->
   </div>
   
   <script>
